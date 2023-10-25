@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Surat Menyurat Sanata Dharma</title>
   </head>
   <body>
@@ -70,7 +71,7 @@
                 <li><a class="dropdown-item" href="#">Profil</a></li>
                 <li><a class="dropdown-item" href="#">Setting</a></li>
                 <li>
-                  <a class="dropdown-item" href="SuratMenyurat/login/login.html"
+                  <a class="dropdown-item" href="/WebsiteSurat/login/"
                     >Logout</a
                   >
                 </li>
@@ -93,13 +94,13 @@
             <li>
               <a href="#" class="nav-link px-3 active">
                 <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                <span>Dashboard</span>
+                <span>Surat Permohonan</span>
               </a>
             </li>
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
             <li>
               <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
-                Interface
+                Menu
               </div>
             </li>
             <li>
@@ -109,7 +110,7 @@
                 href="#layouts"
               >
                 <span class="me-2"><i class="bi bi-layout-split"></i></span>
-                <span>Pemohon</span>
+                <span>Lacak</span>
                 <span class="ms-auto">
                   <span class="right-icon">
                     <i class="bi bi-chevron-down"></i>
@@ -123,7 +124,7 @@
                       <span class="me-2"
                         ><i class="bi bi-speedometer2"></i
                       ></span>
-                      <span>List Daftar</span>
+                      <span>Status Surat</span>
                     </a>
                   </li>
                 </ul>
@@ -132,7 +133,7 @@
             <li>
               <a href="#" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-book-fill"></i></span>
-                <span>Daftar Mahasiswa</span>
+                <span>Riwayat Surat</span>
               </a>
             </li>
             <li class="my-4"><hr class="dropdown-divider bg-light" /></li>
@@ -142,61 +143,32 @@
       </div>
     </div>
     <!-- offcanvas -->
-    <main class="mt-5 pt-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <h4>Dashboard</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <div class="card bg-primary text-white h-100">
-              <div class="card-body py-5">Jumlah Pemohon</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
+    <div class="form-container">
+        <h2>Form Permohonan</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card bg-warning text-dark h-100">
-              <div class="card-body py-5">Menunggu Status</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
+
+            <div class="form-group">
+                <label for="name">NIM:</label>
+                <input type="text" id="NIM" name="NIM" required>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card bg-success text-white h-100">
-              <div class="card-body py-5">Berhasil</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
+
+            <div class="form-group">
+                <label for="email">Nomor Telepon:</label>
+                <input type="text" id="NoTelepon" name="NoTelepon" required>
             </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <div class="card bg-danger text-white h-100">
-              <div class="card-body py-5">Ditolak</div>
-              <div class="card-footer d-flex">
-                View Details
-                <span class="ms-auto">
-                  <i class="bi bi-chevron-right"></i>
-                </span>
-              </div>
+
+            <div class="form-group">
+                <label for="message">Isi:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-          </div>
-        </div>
-      </div>
-    </main>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
