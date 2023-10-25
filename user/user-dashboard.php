@@ -26,11 +26,9 @@
         >
           <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
         </button>
-        <a
-          class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold"
-          href="#"
-          ><img src="logo_usd.png"
-        /></a>
+        <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">
+          <img id="navbar-logo" src="logo_usd.png" alt="Logo" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
