@@ -142,31 +142,42 @@
     </div>
     <!-- offcanvas -->
     <div class="form-container">
-        <h2>Form Permohonan</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
+    <h2>Form Permohonan</h2>
+      <form action="proses.php" method="post">
+          <div class="form-group">
+              <label for="name">Nama:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
 
-            <div class="form-group">
-                <label for="name">NIM:</label>
-                <input type="text" id="NIM" name="NIM" required>
-            </div>
+          <div class="form-group">
+              <label for="NIM">NIM:</label>
+              <input type="text" id="NIM" name="NIM" required>
+          </div>
 
-            <div class="form-group">
-                <label for="email">Nomor Telepon:</label>
-                <input type="text" id="NoTelepon" name="NoTelepon" required>
-            </div>
+          <div class="form-group">
+              <label for="NoTelepon">Nomor Telepon:</label>
+              <input type="text" id="NoTelepon" name="NoTelepon" required>
+          </div>
 
-            <div class="form-group">
-                <label for="message">Isi:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
+          <div class="form-group">
+              <label for="surat">Pilihan Surat:</label>
+              <select id="surat" name="surat" required>
+                  <option value="surat1">Surat Pernyataan</option>
+                  <option value="surat2">Surat Pengajuan</option>
+                  <option value="surat3">Surat Permohonan</option>
+              </select>
+          </div>
+
+          <div class="form-group">
+              <label for="message">Isi:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+              <button type="submit">Submit</button>
+          </div>
+      </form>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
     <script src="./js/jquery-3.5.1.js"></script>
